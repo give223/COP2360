@@ -11,7 +11,7 @@ try
     int dividend = Convert.ToInt32(number1);
     int divisor = Convert.ToInt32(number2);
 
-    int quotient = dividend/divisor;
+    int quotient = divide(dividend, divisor);
     Console.WriteLine(dividend + " divided by " + divisor + " equals " + quotient);
 }
 catch (FormatException ex)
@@ -28,6 +28,12 @@ catch (Exception ex)
 {
     Console.WriteLine("Something went wrong.");
     Console.WriteLine("Error Message: " + ex.Message);
+}
+
+int divide(int a, int b)
+{
+    int c = a/b;
+    return c;
 }
 
 
