@@ -64,7 +64,7 @@ class Program
     static void Main(string[] args)
     {
         PopulateDictionary(); // Calls the method to populate the dictionary
-        AddNewTeam();
+        AddNewTeam(); // Calls the method to ask the user to insert a new team
         DisplayDictionaryContents(); // Calls the method to display the contents of the dictionary
     }
 }
